@@ -17,7 +17,7 @@ def ruoka_filter(ei_proteiinit, ei_tyypit, ei_ruoka, kuukausi):
     return lambda ruoka: \
         ruoka.proteiini not in ei_proteiinit and \
         ruoka.tyyppi not in ei_tyypit and \
-        ((ruoka.nimi not in ei_ruoka) if ei_ruoka is not None else True) and \
+        ruoka.nimi not in ei_ruoka and \
         (ruoka.sopiva_sesonkiin(Vuodenaika.kuukaudesta(kuukausi)) if kuukausi is not None else True)
 
 
@@ -29,7 +29,7 @@ def viikon_ruoat(tarjolla):
     ruoat.append(ruoka)
 
     for j in range(EXTRA_PER_WEEK + FOOD_PER_WEEK - 1):
-        tarjolla = list(filter(ruoka_filter([ruoka.proteiini], [ruoka.tyyppi], None, None), tarjolla))
+        tarjolla = list(filter(ruoka_filter([ruoka.proteiini], [ruoka.tyyppi], [], None), tarjolla))
 
         shuffle(tarjolla)
         ruoka = tarjolla[0]
@@ -44,14 +44,18 @@ def main():
 
     viikot = []
 
-    for i in range(100):
+    for i in range(5):
         delta = timedelta(weeks=i)
         vko = tanaan + delta
         kuukausi = vko.month
 
-        ei_proteiineja = ruoka_ominaisuudet(viikot[len(viikot) - PROTEIN_COOLDOWN:], lambda r: r.proteiini)
-        ei_tyyppeja = ruoka_ominaisuudet(viikot[len(viikot) - TYPE_COOLDOWN:], lambda r: r.tyyppi)
-        ei_ruokaa = ruoka_ominaisuudet(viikot[len(viikot) - FOOD_COOLDOWN:], lambda r: r.nimi)
+        proteiini_i = max(0, len(viikot) - PROTEIN_COOLDOWN)
+        tyyppi_i = max(0, len(viikot) - TYPE_COOLDOWN)
+        ruoka_i = max(0, len(viikot) - FOOD_COOLDOWN)
+
+        ei_proteiineja = ruoka_ominaisuudet(viikot[proteiini_i:], lambda r: r.proteiini)
+        ei_tyyppeja = ruoka_ominaisuudet(viikot[tyyppi_i:], lambda r: r.tyyppi)
+        ei_ruokaa = ruoka_ominaisuudet(viikot[ruoka_i:], lambda r: r.nimi)
 
         tarjolla = list(filter(ruoka_filter(ei_proteiineja, ei_tyyppeja, ei_ruokaa, kuukausi), ruoat))
 
