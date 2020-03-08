@@ -1,4 +1,4 @@
-from statics import TYPE_COOLDOWN, PROTEIN_COOLDOWN, EXTRA_PER_WEEK, FOOD_PER_WEEK
+from statics import TYPE_COOLDOWN, PROTEIN_COOLDOWN, EXTRA_PER_WEEK, FOOD_PER_WEEK, FOOD_COOLDOWN
 from generointi.vuodenaika import Vuodenaika
 from generointi.reader import lue
 from datetime import date, timedelta
@@ -13,10 +13,11 @@ def ruoka_ominaisuudet(viikot, ominaisuus):
     return set(map(ominaisuus, kaikki))
 
 
-def ruoka_filter(ei_proteiinit, ei_tyypit, kuukausi):
+def ruoka_filter(ei_proteiinit, ei_tyypit, ei_ruoka, kuukausi):
     return lambda ruoka: \
         ruoka.proteiini not in ei_proteiinit and \
         ruoka.tyyppi not in ei_tyypit and \
+        ((ruoka.nimi not in ei_ruoka) if ei_ruoka is not None else True) and \
         (ruoka.sopiva_sesonkiin(Vuodenaika.kuukaudesta(kuukausi)) if kuukausi is not None else True)
 
 
@@ -28,7 +29,7 @@ def viikon_ruoat(tarjolla):
     ruoat.append(ruoka)
 
     for j in range(EXTRA_PER_WEEK + FOOD_PER_WEEK - 1):
-        tarjolla = list(filter(ruoka_filter([ruoka.proteiini], [ruoka.tyyppi], None), tarjolla))
+        tarjolla = list(filter(ruoka_filter([ruoka.proteiini], [ruoka.tyyppi], None, None), tarjolla))
 
         shuffle(tarjolla)
         ruoka = tarjolla[0]
@@ -50,11 +51,14 @@ def main():
 
         ei_proteiineja = ruoka_ominaisuudet(viikot[len(viikot) - PROTEIN_COOLDOWN:], lambda r: r.proteiini)
         ei_tyyppeja = ruoka_ominaisuudet(viikot[len(viikot) - TYPE_COOLDOWN:], lambda r: r.tyyppi)
+        ei_ruokaa = ruoka_ominaisuudet(viikot[len(viikot) - FOOD_COOLDOWN:], lambda r: r.nimi)
 
-        tarjolla = list(filter(ruoka_filter(ei_proteiineja, ei_tyyppeja, kuukausi), ruoat))
+        tarjolla = list(filter(ruoka_filter(ei_proteiineja, ei_tyyppeja, ei_ruokaa, kuukausi), ruoat))
 
         vko_ruoat = viikon_ruoat(tarjolla)
         viikot.append([vko, vko_ruoat])
+
+        print(i)
 
     kirjoita(viikot)
 
