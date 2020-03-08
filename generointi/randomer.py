@@ -58,8 +58,6 @@ def main():
         vko_ruoat = viikon_ruoat(tarjolla)
         viikot.append([vko, vko_ruoat])
 
-        print(i)
-
     kirjoita(viikot)
 
 
