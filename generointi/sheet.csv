@@ -1,12 +1,12 @@
 Nimi	Tyyppi	Proteiini	Sesonki	Ainekset
 Makaronilaatikko	Uuni	Soija		400g Makaronia, 100g sipulia, 2 valk sip kynt, 2dl soijarouhetta, 1 purkki maitoa, 3 kananmunaa, 2dl juustoraastetta
 Sitruunaiset hyrskypotut	Yleis	Soija	kesä	1kg uusia perunoita, 1 sitruuna, 1 ruukku tilliä, 2 nippua sipulia, 75g voita, kasvisnakit
-Bataatticurry	Pata	Kikherne	talvi	1.2kg bataattia, 200g sipulia, 4 valk sip kynt, 2 tlk kikherneitä, 130g pinaattia, 4 rkl tandooricurrytahnaa, 2tlk kookosmaito
-Nyhtökaurabolognese	Pasta	Nyhtökaura	syksy, talvi, kevät	1pkt nyhtökaura (tomaatti), 100g sipulia, 1 valksip kyns, 1 tlk muttia, 1 rkl balsamicoetikkaa, 400g nauhapastaa, 100g parmesaania, basilikaa
+Bataatticurry	Pata	Kikherne	talvi, kevät	1.2kg bataattia, 200g sipulia, 4 valk sip kynt, 2 tlk kikherneitä, 130g pinaattia, 4 rkl tandooricurrytahnaa, 2tlk kookosmaito
+Nyhtökaurabolognese	Pasta	Nyhtökaura		1pkt nyhtökaura (tomaatti), 100g sipulia, 1 valksip kyns, 1 tlk muttia, 1 rkl balsamicoetikkaa, 400g nauhapastaa, 100g parmesaania, basilikaa
 Hampurilainen	Roska	Eines		Leivät (tai sienet), pihvit, majoneesia, ketsuppia, salaattia, suolakurkkua, muut
-Perunamuusi + muut	Yleis	Eines	syksy, talvi, kevät	1/2kg perunaa, 100g sipulia, maitoa, falafel/nakit/muu
-Pikashakshuka	Pata	Kikherne	syksy, talvi	100g sipulia, 2 valksip kynt, 1 paprika, 1 tlk kikherneitä, 1 mutti, 4 munaa, 50g fetaa, (1/2 ruukkua korianteria)
-Härkiskäristys	Yleis	Papu	talvi, syksy	100g sipulia, 1 porkkana, 1 pkt beanit, 2 valksipkynt, (600g juuriselleriä ja 2 omenaa ja 2dl ruokakermaa)
+Perunamuusi + muut	Yleis	Eines		1/2kg perunaa, 100g sipulia, maitoa, falafel/nakit/muu
+Pikashakshuka	Pata	Kikherne		100g sipulia, 2 valksip kynt, 1 paprika, 1 tlk kikherneitä, 1 mutti, 4 munaa, 50g fetaa, (1/2 ruukkua korianteria)
+Härkiskäristys	Yleis	Papu		100g sipulia, 1 porkkana, 1 pkt beanit, 2 valksipkynt, (600g juuriselleriä ja 2 omenaa ja 2dl ruokakermaa)
 Tuorehernekeitto	Keitto	Herne		600g pakasateherneitä, 200g sipulia, 1 valksipkyns, 1 jauhoperuna, 2 dl kuohukerma
 Vihreä nuudeliwok	Wok	Papu		100g lehtikaalia, 4 kevätsipulinvartta, 150g kokojyvänuudeleita, 200g parsakaalia (pakaste), 200g vihreitä papuja paloina (pakaste), 3/4dl soijakastiketta, 1/2dl limemehua
 Broccoliinimunapannu	Pata	Tofu	kevät	300g kylmäsavutofua, 200g broccoliinia, 200g sipulia, 4 munaa, 1 lime
@@ -15,20 +15,20 @@ Halloumisalaatti	Salaatti	Maito		1pkt halloumia, salaattia, tomaattia, kurkkua, 
 Raviolisalaatti	Salaatti	Maito	kevät	2pkt akt ja juustokuutiot (apetina snack), 200g broccolini, 250g ravioli, 1 punasipuli, 150g rucola, 100g pinaatti, sitruuna
 Chili con kurpitsa	Pata	Papu	syksy	1/2 myskikurpitsaa, 100 g sipulia, 1 tlk muttia,  1 tlk kidneypapuja, 1 limen mehu
 Bataattivuoka	Pata	Maito	talvi	600 g bataattia, 200 g perunaa, 1 kananmuna, 100 g sipulia, 2 pkt Mifujauhista/kaurajauhista 3 rkl tomaattisosetta, 100 g pakasteherneitä
-Vegaaninen carbonara	Pasta	Tofu	syksy, talvi	1 pkt (300 g) kylmäsavutofua, 100 g juustoa, 100 g sipulia, 200 g herkkusieniä, 1/2 ruukkua timjamia, 1/2 tl savupaprikajauhetta, 2 1/2 dl kermaa, 300 g täysjyväspagettia
+Vegaaninen carbonara	Pasta	Tofu		1 pkt (300 g) kylmäsavutofua, 100 g juustoa, 100 g sipulia, 200 g herkkusieniä, 1/2 ruukkua timjamia, 1/2 tl savupaprikajauhetta, 2 1/2 dl kermaa, 300 g täysjyväspagettia
 Tortillat	Roska			1pkt tortilla, 250g proteiinia (esim härkis), mausteseos, salsa, avokado, ananas, tom, etc.
-Paahdetut kasvikset, falafelit ja hernetahna	Uuni	Kikherne	syksy, talvi, kevät	800g perunaa, 400g porkkanaa, 600g bataattia, 100g juuriselleriä, 400g sipulia, 4 tomaattia, 2 valksipkynt, 450g falafelpyörykkää, 200g pakasteherne, 2tl piparjuuritahnaa
-Uunikasvis-leipäjuustokeitto	Keitto	Maito	syksy, talvi	400g perunaa, 200g porkkanaa, 300g bataattia, 50g juuriselleriä, 200g sipulia, 2 tomaattia, 2dl ruokakermaa, 1rlk balsamicoa, 200g leipäjuustoa
-Jauhisbolognese	Pasta	Maito	syksy, talvi	1 iso porkkana, 100 g sipulia, 1 prk muttia, 1 rs (250 g) Mifu-jauhista, 250 g täysjyvänuudelia, juustoraastetta
-Soijabolognese	Pasta	Soija	syksy, talvi, kevät	200g soijaa, 100g sipulia, 1 valksip kyns, 1 tlk muttia, 1 rkl balsamicoetikkaa, 400g spagettia, 100g parmesaania, basilikaa
+Paahdetut kasvikset, falafelit ja hernetahna	Uuni	Kikherne		800g perunaa, 400g porkkanaa, 600g bataattia, 100g juuriselleriä, 400g sipulia, 4 tomaattia, 2 valksipkynt, 450g falafelpyörykkää, 200g pakasteherne, 2tl piparjuuritahnaa
+Uunikasvis-leipäjuustokeitto	Keitto	Maito		400g perunaa, 200g porkkanaa, 300g bataattia, 50g juuriselleriä, 200g sipulia, 2 tomaattia, 2dl ruokakermaa, 1rlk balsamicoa, 200g leipäjuustoa
+Jauhisbolognese	Pasta	Maito		1 iso porkkana, 100 g sipulia, 1 prk muttia, 1 rs (250 g) Mifu-jauhista, 250 g täysjyvänuudelia, juustoraastetta
+Soijabolognese	Pasta	Soija		200g soijaa, 100g sipulia, 1 valksip kyns, 1 tlk muttia, 1 rkl balsamicoetikkaa, 400g spagettia, 100g parmesaania, basilikaa
 Myskikurpitsakeitto	Keitto	Linssi	syksy	1/2 myskikurpitsaa, 1 tlk kypsiä punaisia linssejä, 2 rkl inkivääritahnaa, 1 tlk kookosmaitoa, 1 ruukku korianteria
-Katkarapuspagetti	Pasta	Katkarapu	syksy, talvi, kevät, kesä	180 g isoja katkarapuja, 300 g spagettia, 1 tl sitruunankuorta raastettuna, 2 dl (60 g) parmesaania, 1 dl lehtipersiljaa
-Katkarapuwokki	Wok	Katkarapu	syksy, talvi, kevät, kesä	180 g katkarapuja, 2 pkt pikanuudeleita, 2 pkt (400 g) lehtikaali-kasviswoksekoitusta (Tuorekset), 1 ruukku persiljaa tai korianteria
+Katkarapuspagetti	Pasta	Katkarapu		180 g isoja katkarapuja, 300 g spagettia, 1 tl sitruunankuorta raastettuna, 2 dl (60 g) parmesaania, 1 dl lehtipersiljaa
+Katkarapuwokki	Wok	Katkarapu		180 g katkarapuja, 2 pkt pikanuudeleita, 2 pkt (400 g) lehtikaali-kasviswoksekoitusta (Tuorekset), 1 ruukku persiljaa tai korianteria
 Kokopellin kasvispihvi	Uuni	Herne		100g cashew-pähkinää, 2dl kvinoaa, 300g kesäkurpitsaa, 200g juuriselleriä, 1 purjo, 200g pakasteherneitä, rucolaa, salaattia, jugurttia
-Kreikkalainen salaatti	Salaatti	Maito		1 rs kirstom, 1/2 kurk, 1 punasipuli, 1 vihreä paprika, oliiveja, 1pkt fetaa, 150g salaattisekoitusta
+Kreikkalainen salaatti	Salaatti	Maito		4 luumutomaattia, 1 kurkku, 2 paprikaa, 1 punasipuli, oliiveja, 300 g fetaa, erilaisia salaattilaatuja, leipää
 Gazpacho	Keitto		kesä	500g tom, 3 nippusipulia, 1 punainen paprika, 15cm kurkkua, (lisänä 1prk säilykelinssejä)
 Härkishampurilainen	Roska	Papu		1 pkt härkistä, 1 porkkana, 1 sipuli, 2 kananmunaa, 2 rkl tom sos, 1 punasipuli, 1 avokado, loput täytteet
-Ramen	Keitto	Tofu	syksy, talvi	200g munanuudelia, 3 kevätsipulin vartta, 200g sieniä, 1pkt tofua, 200g sokeriherneen palkoja, teriakikastiketta 3 rkl, (4rkl seesamainsiemeniä), kananmunia
+Ramen	Keitto	Tofu		200g munanuudelia, 3 kevätsipulin vartta, 200g sieniä, 1pkt tofua, 200g sokeriherneen palkoja, teriakikastiketta 3 rkl, (4rkl seesamainsiemeniä), kananmunia
 Nachovuoka	Roska	Papu		200g maissilastuja, 325g mustapapuja, 2rkl tom pyr, 1 prk tacokastiketta, juustoraastetta, 1 punasipuli, kirstom, paprika, rucola
 Sienikeitto	Keitto	Sieni	kesä, syksy	1 litra tuoreita sieniä / 2-3dl esikäsiteltyjä kuumennettuja sieniä, 1 sipuli, 1 dl kermaa
 Sipulipiirakka	Uuni			100g rasvaa, 100g porkkanaa, 500g sipulia, 1 dl kermaa tai maitoa, 1 muna, 2dl juustoraastetta
@@ -36,19 +36,63 @@ Kasvispiirakka	Uuni	Maito		100g rasvaa, 100g + 3 suurta porkkanaa, pala selleri�
 Sienipiirakka	Uuni	Sieni	kesä, syksy	100g rasvaa, 400g sieniä, 1 sipuli, 2-3 munaa, 2dl kermaa, 150g juustoraastetta tai sinhomjuust
 Pyttipannu	Yleis	Soija		500g perunaa, paketti soijanakkeja, 100g pakastesipulia, (munia), salaattiaineita
 Kesäkurpitsa-kookoskeitto	Keitto			2 kesäkurpitsaa, purjo, 1tlk kookosmaitoa, 1 lime, sitrmeh, (lisänä 1prk säilykelinssejä)
-Avokadopasta	Pasta	Maito	talvi	1 lime, 2 avokadoa, basilikaa / lehtipersiljaa / korianteria, 60g pekorinoa / parmesaania, 450g spagettia
-Pitsa	Roska		syksy, talvi, kevät, kesä	tom mursk, loput päälliset, (ananas), (herkkisienet), (paprika), (kesäkurpitsa), (feta), (härkis)
+Avokadopasta	Pasta	Maito		1 lime, 2 avokadoa, basilikaa / lehtipersiljaa / korianteria, 60g pekorinoa / parmesaania, 450g spagettia
+Pitsa	Roska			tom mursk, loput päälliset, (ananas), (herkkisienet), (paprika), (kesäkurpitsa), (feta), (härkis)
 Kurpitsarisotto	Riisi	Maito	syksy	200g sipulia, 600g syötävää kurpitsaa, 1dl suppilovahveroa, 3dl risottoriisiä, 1dl kuivaa valkoviiniä, 100g parmesaaniaa
 Buddha bowl	Riisi	Kikherne		1dl kvinoaa, 1 keskikokoinen bataatti, 1prk kikherneitä, 1ps babypinaattia, 1 avokado
 Vegebowl	Riisi	Tofu		Kasa riisiä, (ruusukaalia (ei oikeesti)), 2 avokadoa, 1 prk tofua, pinaattia, (paprikaa), (ituja), (keskurp), jne.
 Herkkusienipasta	Pasta	Sieni		400g pastaa, 1pkt tuoreita herksien, 1 sipuli, 3/2 dl maitoa
 Ratatouille	Pata	Maito		1 munakoiso, 1 paprika, 20g kirstom, 2 punasipulia, 200g fetaa
-Marokkolainen kikhernekeitto	Keitto	Kikherne		1 sipuli, 1 porkkana, 1 tlk tom mursk, 2pfk kikhern, 1/2dl sitrmeh, 2-3 tuoretta tom
+Marokkolainen kikhernekeitto	Keitto	Kikherne		1 sipuli, 1 porkkana, 1 tlk tom mursk, 2pkt kikhern, 2 rkl sitrmeh, 2-3 tuoretta tom
 Chili sin carne	Riisi	Soija		1 sipuli, 1 holy trinity paprika, 2 porkkanaa, 2rkl tom pyr, 1 prk tom mursk, 1 tlk kidneypapuja, 1 tlk muuta papua, kasa riisiä
 Sitruunarisotto	Riisi	Maito	kevät, kesä	50g sipulia, 3dl risottoriisiä, 2dl valkoviiniä, sitruuna, 1dl parmesaania
 Uuniperunat ja katkaraputäyte	Yleis	Katkarapu	talvi, syksy	8 rosamundaperunaa, 1ps (180g) kuorittuja isoja katkarapuja, 100g piparjuurituorejuustoa, 200g turk jug, 1/2dl ruohosipulia
 Uuniperuna ja fetatäyte	Yleis	Maito	kevät, kesä	8 rosamundaperunaa, 4 tomaattia, 2 vihr papr, 2/3 kurk, 400g fetaa, 2dl oliiveja, 4dl maustamatonta jug
-Mifubolognese	Pasta	Maito	syksy, talvi, kevät	2 sipulia, 2 porkkanaa, 2 varsisellerin vartta, 2 tlk tom mursk, 2 pkt mifua, 500g spagettia, 50g juustoraastetta, (yrttejä)
+Mifubolognese	Pasta	Maito		2 sipulia, 2 porkkanaa, 2 varsisellerin vartta, 2 tlk tom mursk, 2 pkt mifua, 500g spagettia, 50g juustoraastetta, (yrttejä)
 Katkarapupasta	Pasta	Katkarapu		1ps (180g) isoja katkarapuja 300g spagettia, 2dl parmesaania, 1 sitruuna, persiljaa, 2dl kermaa
 Pestopasta	Pasta	Maito		2 ruukkua basilikaa, 50g parmesaania, 50g pinjansiemeniä / cashew, 120g spagettia
-Intialainen linssipata	Pata	Linssi	syksy, talvi	100 g sipulia, 1 rkl raastettua tuoretta inkivääriä, 3 dl punaisia linssejä, 1 prk tomaattimurskaa
+Intialainen linssipata	Pata	Linssi		100 g sipulia, 1 rkl raastettua tuoretta inkivääriä, 3 dl punaisia linssejä, 1 prk tomaattimurskaa
+Kasviksia hapanimeläkastikkeessa	Riisi	Tofu		2 paprikaa, 4 porkkanaa, 200 g sipulia, 2 purkkia ananaspaloja, 2 dl sokeria, 4 rkl soijakastiketta 4 rkl punaviinietikkaa, 3 rkl Maizenaa, 2 dl ketsuppia, 2 pakettia tofua
+Kiinalainen nyhtökauraspagetti	Pasta	Nyhtökaura		200 g spagettia, 4 kevätsipulinvartta, 150-200 g herneitä tai vihreitä papuja, 1 paketti nyhtökauraa, 2 tl seesamiöljyä
+Feta-pinaattipiirakka	Uuni	Maito		100 g maustamatonta tuorejuustoa, 100 g voita, 150 g pinaattia, 2 munaa, 2 dl kermaa/maitoa, 150-200 g fetaa, kirsikkatomaatteja, juustoa
+Kiinalainen keitto	Keitto	Sieni		1 rkl raastettua inkivääriä, 1/2 purjoa tai nippu kevätsipulia, 1/2 kiinankaali, siitakesieniä, 3/4 dl riisiä
+Pestopasta	Pasta	Maito		300 g tagliatellea, 1 ruukku tuoretta basilikaa, 50 g cashewpähkinöitä, 1/2 dl parmesaaniraastetta
+Täytetyt kesäkurpitsat	Uuni	Linssi		1,5 dl hirssiä, 2 keskikokoista kesäkurpitsaa, 1/2 kukkakaali, 1 tlk vihreitä linssejä, 2 dl kookosmaitoa
+Täytetyt paprikat	Uuni	Sieni		4 dl keitettyä riisiä, 4 paprikaa, 100 g herkkusieniviipaleita, 1 1/2 -2 dl juustoraastetta
+Pinaatti-sitruuna-ricottatuorepasta	Pasta	Maito		75 g tuoretta pinaattia, 1 sitruuna, 1 pkt tuorepastaa, 250 g ricottajuustoa, 1 dl parmesaania, leipää
+Punainen pestopasta	Pasta	Maito		500 g tuorepastaa, 100 g aurkuivtom, 100 g parmesaania, 1 dl pinjansiemeniä, 1/2 dl tuoretta basilikaa, leipää
+Tomaatti-linssikeitto	Keitto	Linssi		150 g sipulia, 2 tlk muttia, 2 dl kermaa, 1 tlk linssejä
+Nokkoskeitto	Keitto	Maito	kevät	1 1/2 l tuoreita nokkosenlehtiä, 1 l maitoa
+Pinaatti-munapannu	Pata	Maito		200 g pinaattia, 100 g sipulia, 2 rkl kurkumaa, 4 kananmunaa, 200 g raejuustoa
+Tuorepinaattikeitto	Keitto	Kananmuna		500 g tuoretta pinaattia, 1 dl kuohukermaa, 4 kananmunaa
+Pinaatti-fetapasta	Pasta	Maito		100 g pinaattia, 250 g pinaatti-fettuccine tuorepastaa, 150 g fetaa
+Parsapiiras	Uuni	Maito	kevät	100 g voita, 1 1/2 dl parmesaaniraastetta, 1 nippu vihreää parsaa, 150 g ranskankermaa, 100 g yrttituorejuustoa, 2-3 kananmunaa, 3 rkl hienonnettua basilikaa
+Parsakeitto	Keitto	Maito	kevät	1 nippu vihreää parsaa, 2 dl ruokakermaa, 1 dl silputtua persiljaa, 2 sitruunaa, 150-200 g ranskankermaa
+Risotto Primavera	Riisi	Maito	kevät	1/2 nippua vihreää parsaa, 1-2 salottisipulia, 3 dl risottoriisiä, 3 dl kuivaa valkoviiniä, 1 dl parmesaania, 1 dl kevätsipulia, 100 g pakasteherneitä, 1 dl ruokakermaa, rucolaa, luomusitruuna
+Kesäkurpitsapasta ja hernepesto	Pasta	Herne		200 g pakasteherneitä, 1 1/2 dl pecorinoraastetta, 3/4 dl cashewpähkinöitä, 1 ruukku tuoretta basilikaa, 2 1/2 rkl sitruunamehua, 900 g kesäkurpitsaa, sokeriherneen palkoja
+Lämmin porkkana-kikhernesalaatti	Salaatti	Kikherne		1 kg porkkanoita, 1 pkt kikherneitä, 200g fetaa, tuoretta korianteria tai minttua
+Kantarellikastike	Yleis	Sieni	syksy	200 g kantarelleja, 100 g sipulia, 2 dl kuohukermaa, 1/2-1 rkl balsamiviinietikkaa, 1/2 dl persiljaa, perunaa
+Pinaattilasagne	Uuni	Maito		9 lasagnelevyä, 100 g sipulia, 400 g pinaattia, 1 tl oreganoa, 2 1/2 dl parmesaaniraastetta, 500 g maitorahkaa, 100 g pehmeää vuohenjuustoa
+Soija-kaalilaatikko	Uuni	Soija		1 dl ohraa, 200 g sipulia, 1-2 porkkanaa, 1 pieni kaali, 2 dl soijarouhetta, 2 dl kaurakermaa, puolukkaa
+Lehtikaalirisotto	Riisi	Maito	talvi	200 g lehtikaalia, 200 g fenkolia, 100 g sipulia, 35 g piparjuurta karkeana raasteena, 1 luomusitruuna, 4 dl risottiriisiä,2 1/2 dl omenatäysmehua, 150 g juustoraastetta, 1 dl hienonnettua persiljaa
+Pyörtynyt imaami	Uuni	Maito		4 munakoisoa, 3 isoa tomaattia, 370 g muttia, 100 g sipulia, jogurttia
+Pinaattiletut	Yleis	Eines		Pinaattilettuja ja perunaa. Bearnaisekastiketta ja voita. Keväällä vaikka parsaa lisäkkeeksi
+Kikherne-juurespata	Uuni	Kikherne	syksy, talvi	6 porkkanaa, 5 punajuurta, 3-5 sipulia, 1 pieni lanttu, 1 palsternakka, pala selleriä, 200-300 g herkkusieniä, 2 prk kikherneitä
+Kreikkalainen arkivuoka	Uuni	Maito		50 g rucolaa, 300 g kesäkurpitsaa, 200 g paprikaa, oliiveja, 180 g fetaa
+Kesäkurpitsacurry	Pata	Linssi		2 tl currytahnaa, 100 g sipulia, 1 paprika, 500 g kesäkurpitsaa, 200 g creme fraichea, 250 g kirsikkatomaatteja, tuoretta korianteria
+Kasviscannellonit	Uuni	Maito		250 g cannelloneja, 1 prk ruokakermaa kolme sipulia, 400 g muttia, 100 g mozzarellaraastetta, 400 g kasvissekoitusta (esim pomodoro?), 6 rkl pestoa (alla genovese), 200 g raejuustoa, salaattiaineita
+Linssicurry	Pata	Linssi		2 dl linssejä, 600 g kiinteää perunaa, 350 g valkokaalia, 150 g sipulia, 1 rkl currya, 1 prk paksumpi ruokakerma, 1 1/2 rkl omena/aprikoosihilloa
+Täytetyt munakoisot	Uuni	Kikherne		4 munakoisoa, 100 g sipulia, 1 paprika, 1 tkl kikherneitä, 100 g juustoa, 2 dl ruokakermaa, persiljaa
+Munakoisogratiini	Uuni	Maito		2 (n. 400 g) munakoisoa, 200 g sipulia, i tlk muttia, 1 prk ruokakermaa kolme juustoa, 1/2 pussia (a 150 g) juustoraastetta
+Välimerellinen kasviskastike	Yleis	Maito		1 325 g munakoiso, 250 g paprikaa, 300 g sipulia, 1 dl akt, 1 dl paprikatäytteisiä oliiveja, 1 dl rusinoita, 4 dl omenamehua, 200 g tuorejuustoa yrtti, 1/2 dl persiljaa
+Hernerisotto	Riisi	Herne		170 g sipulia, 3 dl risottoriisiä, 100 g creme fraichea, 2 rkl sitrmeh, 200 g pakasteherneitä, 100 g parmesaania, 1/2 dl persiljaa
+Juuresratatouille	Pata	Maito		200 g sipulia, 3 porkkanaa, 150 g lanttua, 100 g palsternakkaa, 1 tlk muttia, 150 g creme fraichea
+Kantarellirisotto	Riisi	Sieni	syksy	250 g kantarelleja, 100 g varsiselleriä, 100 g sipulia, 75 g pakastepinaattia, 200 g risottoriisiä, 1 prk double cream kuohukermaa, 1/2 dl tilliä, 75 g parmesaania
+Mifu-yrttipasta	Pasta	Maito		250 g spagettia, 1 ruukku tuoretta basilikaa, 1/2 ruukkua tuoretta ruohosipulia, 3 rkl kapriksia, 250 g Mifusuikaleita yrtti-valkosipuli, 8 miniluumutomaattia, sitruunalohkoja
+Pestomifu	Riisi	Maito		200 g miniluumutomaatteja, 250 g mifusuikale yrtti-valkosipuli, 125 g vihreää pestoa, 2 dl kuohukermaa, 1 dl persiljaa
+Kasvistagliatelle	Pasta	Maito	kevät	400 g porkkanaa, 400 g kesäkurpitsaa, 200 g tuoretta parsaa, 1 prk creme fraichea, 1 ruukku tuoretta basilikaa, juustoraastetta
+Nopea borssikeitto	Keitto	Soija		200 g sipulia, 5 dl omenamehua, 400 g kiinankaalia, 1 prk (570/330 g) etikkapunajuuria suikaleina, 1 prk creme fraichea
+Juurescurry	Pata			2 cm tuoretta inkivääriä, 100 g sipulia, 250 g porkkanaa, 500 g perunaa, 300 g kukkakaalia, 200 g kookoskermaa, 150 g creme fraichea, naanleipää, 1 lime, tuoretta korianteria
+Uunikaali ja nakit	Yleis	Eines		800 g valkokaalia, 150 g sipulia, 150 g juustoraastetta, kasvisnakkeja/makkaraa
+Tomaattikeitto	Keitto	Maito		1 kg tuoreita tomaatteja tai 2-3 tlk hyvänlaatuisia kokonaisia tölkkitomaatteja, 200 g sipulia, 1 porkkana, tuoretta basilikaa
+Munakoiso-linssipata	Pata	Linssi		1 (350 g) munakoiso, 100 g sipulia, 2 rkl tomaattisosetta, 1 tlk muttia, 2 dl punaisia linssejä, 200 g turkkilaista jogurttia, kvinoaa
