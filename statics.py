@@ -9,4 +9,11 @@ FOOD_STORAGE = "ruoat"
 # Bot settings
 POLL_INTERVAL_SECONDS = 5
 STARTUP_NEWNESS_MINUTES = 10
-FOOD_COMMAND = "/lista"
+
+FOOD_COMMAND = "r".lower()
+EXTRA_COMMAND = "e".lower()
+RELOAD_COMMAND = "reload".lower()
+RERANDOMIZE_COMMAND = "generoi!".lower()
+
+SPREADSHEET_ID = '1WtZZpOU506_iPujD4uJhGOa20jv1daNtYaqKdz47x0A'
+RANGE_NAME = 'Sheet1'

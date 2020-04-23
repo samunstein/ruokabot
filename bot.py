@@ -1,13 +1,16 @@
 import requests
 from datetime import datetime, timedelta, date
 from time import sleep
+from generointi import reader, randomer
+from generointi.ruoka import Ruoka
 
 from bot_token import TOKEN
 
-from statics import EXTRA_PER_WEEK, POLL_INTERVAL_SECONDS, STARTUP_NEWNESS_MINUTES, FOOD_COMMAND, FOOD_STORAGE
+from statics import EXTRA_PER_WEEK, POLL_INTERVAL_SECONDS, STARTUP_NEWNESS_MINUTES, FOOD_COMMAND, FOOD_STORAGE, EXTRA_COMMAND, RELOAD_COMMAND, RERANDOMIZE_COMMAND
 
 
 current_offset = 0
+foodmap = dict()
 
 
 def make_get_req(method, params=None):
@@ -36,8 +39,12 @@ def get_messages():
     return list(new_enough)
 
 
-def get_food_requests(messages):
-    return list(filter(lambda m: "text" in m and m["text"].startswith(FOOD_COMMAND), messages))
+def get_requests(messages, commands):
+    return list(filter(lambda m: "text" in m and m["text"].lower().split()[0] in commands, messages))
+
+
+def get_unknown_requests(messages, known_commands):
+    return list(filter(lambda m: "text" in m and m["text"].lower().split()[0] not in known_commands, messages))
 
 
 def is_int(text):
@@ -53,29 +60,28 @@ def read_foods(offset, extra):
     wanted = now + timedelta(weeks=offset)
     try:
         with open("{}/{}_{}".format(FOOD_STORAGE, wanted.year, wanted.isocalendar()[1]), encoding="UTF-8") as f:
-            ruoat = f.read().strip().split("\n")
+            names = [a.strip() for a in f.readlines()]
             if extra:
-                return ruoat[-EXTRA_PER_WEEK:]
+                names = names[-EXTRA_PER_WEEK:]
             else:
-                return ruoat[:-EXTRA_PER_WEEK]
+                names = names[:-EXTRA_PER_WEEK]
+            ruoat = list(map(lambda name: foodmap[name] if name in foodmap else Ruoka.ei_loydy(name), names))
+            return ruoat
     except:
-        return None
+        return []
 
 
-def format_food(food_text):
-    name, ingredients = food_text.split("\t")
-    return "{}:\n{}".format(name, "".join(["* {}\n".format(i.strip()) for i in ingredients.split(",")]))
+def format_food(food):
+    base = "{}:\n{}".format(food.nimi, "".join(["* {}\n".format(i.strip()) for i in food.ainekset.split(",")]))
+    return base + "\n{}".format(food.linkki) if food.linkki is not None else base
 
 
 def handle_food_request(food_request):
-    send_extra = False
     week_offset = 0
-    parameters = food_request["text"].split()[1:]
-    if "extra" in parameters:
-        send_extra = True
-    numberparam = list(filter(is_int, parameters))
-    if len(numberparam) > 0:
-        week_offset = int(numberparam[0])
+    send_extra = food_request["text"].lower().startswith(EXTRA_COMMAND)
+    offsettxt = " ".join(food_request["text"].split()[1:])
+    if is_int(offsettxt):
+        week_offset = int(offsettxt)
 
     foods = read_foods(week_offset, send_extra)
     foods = list(map(format_food, foods))
@@ -86,15 +92,50 @@ def handle_food_request(food_request):
         make_post_req("sendMessage", {"chat_id": chat_id, "text": food})
 
 
-def loop():
-    messages = get_messages()
-    food_requests = get_food_requests(messages)
+def handle_reload(message):
+    global foodmap
+    foodmap = reader.read()
+    make_post_req("sendMessage", {"chat_id": message["chat"]["id"], "text": "Pling!"})
 
-    for food_message in food_requests:
+
+def handle_generate(message):
+    week_offset = 0
+    offsettxt = " ".join(message["text"].split()[1:])
+    if is_int(offsettxt):
+        week_offset = int(offsettxt)
+
+    global foodmap
+    foodmap = randomer.generate(week_offset)
+    make_post_req("sendMessage", {"chat_id": message["chat"]["id"], "text": "Pling!"})
+
+
+def handle_help(message):
+    apu = "Ruoka: {} [offset]\nExtra: {} [offset]\nPäivitä sheetsistä: {}\nGeneroi uudelleen: {} [offset]".format(
+        FOOD_COMMAND, EXTRA_COMMAND, RELOAD_COMMAND, RERANDOMIZE_COMMAND
+    )
+    make_post_req("sendMessage", {"chat_id": message["chat"]["id"], "text": apu})
+
+
+def loop():
+    try:
+        messages = get_messages()
+    except requests.exceptions.ConnectionError as e:
+        print(e)
+        messages = []
+
+    for food_message in get_requests(messages, [FOOD_COMMAND, EXTRA_COMMAND]):
         handle_food_request(food_message)
+    for reload_message in get_requests(messages, [RELOAD_COMMAND]):
+        handle_reload(reload_message)
+    for regenerate_message in get_requests(messages, [RERANDOMIZE_COMMAND]):
+        handle_generate(regenerate_message)
+    for unknown_message in get_unknown_requests(messages, [FOOD_COMMAND, EXTRA_COMMAND, RERANDOMIZE_COMMAND, RELOAD_COMMAND]):
+        handle_help(unknown_message)
 
 
 def main():
+    global foodmap
+    foodmap = reader.read()
     while True:
         sleep(POLL_INTERVAL_SECONDS)
         loop()

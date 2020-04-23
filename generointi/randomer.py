@@ -1,6 +1,6 @@
-from statics import TYPE_COOLDOWN, PROTEIN_COOLDOWN, EXTRA_PER_WEEK, FOOD_PER_WEEK, FOOD_COOLDOWN
+from statics import TYPE_COOLDOWN, PROTEIN_COOLDOWN, EXTRA_PER_WEEK, FOOD_PER_WEEK, FOOD_COOLDOWN, FOOD_STORAGE
 from generointi.vuodenaika import Vuodenaika
-from generointi.reader import lue
+from generointi.reader import read
 from datetime import date, timedelta
 from random import shuffle
 from generointi.saver import kirjoita
@@ -38,14 +38,35 @@ def viikon_ruoat(tarjolla):
     return ruoat
 
 
-def main():
+def lue_aikaisemmat(offset, ruoat):
+    alku = date.today() + timedelta(weeks=offset)
+    viikkoja = max(PROTEIN_COOLDOWN, TYPE_COOLDOWN, FOOD_COOLDOWN)
+    aikaisemmat_ruoat = []
+    for vko in range(viikkoja):
+        tama = alku - timedelta(weeks=viikkoja - vko)
+        tiedosto = "{}/{}_{}".format(FOOD_STORAGE, tama.year, tama.isocalendar()[1])
+        try:
+            with open(tiedosto, encoding="UTF-8") as f:
+                nimet = [a.strip() for a in f.readlines()]
+        except FileNotFoundError:
+            nimet = []
+
+        vko_ruoat = []
+        for nimi in nimet:
+            if nimi in ruoat:
+                vko_ruoat.append(ruoat[nimi])
+        aikaisemmat_ruoat.append([tama, vko_ruoat])
+    return aikaisemmat_ruoat
+
+
+def generate(offset):
     tanaan = date.today()
-    ruoat = lue()
+    ruoat = read()
 
-    viikot = []
+    viikot = lue_aikaisemmat(offset, ruoat)
 
-    for i in range(5):
-        delta = timedelta(weeks=i)
+    for i in range(100):
+        delta = timedelta(weeks=i + offset)
         vko = tanaan + delta
         kuukausi = vko.month
 
@@ -57,13 +78,14 @@ def main():
         ei_tyyppeja = ruoka_ominaisuudet(viikot[tyyppi_i:], lambda r: r.tyyppi)
         ei_ruokaa = ruoka_ominaisuudet(viikot[ruoka_i:], lambda r: r.nimi)
 
-        tarjolla = list(filter(ruoka_filter(ei_proteiineja, ei_tyyppeja, ei_ruokaa, kuukausi), ruoat))
+        tarjolla = list(filter(ruoka_filter(ei_proteiineja, ei_tyyppeja, ei_ruokaa, kuukausi), ruoat.values()))
 
         vko_ruoat = viikon_ruoat(tarjolla)
         viikot.append([vko, vko_ruoat])
 
-    kirjoita(viikot)
+    kirjoita(offset, viikot)
+    return ruoat
 
 
 if __name__ == "__main__":
-    main()
+    generate(0)

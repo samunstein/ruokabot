@@ -1,4 +1,4 @@
-from generointi.randomer import main
+from generointi.randomer import generate
 
 if __name__ == "__main__":
-    main()
+    generate(0)
