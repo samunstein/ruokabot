@@ -3,3 +3,4 @@ venv
 bot_token.py
 __pycache__
 ruoat
+credentials.json
