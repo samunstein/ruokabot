@@ -27,7 +27,7 @@ def make_post_req(method, params=None):
 def get_messages():
     global current_offset
     resp = make_get_req("getUpdates", {"offset": current_offset})
-    messages = resp.json()["result"]
+    messages = resp.json()["result"] if "result" in resp.json() else []
     if len(messages) > 0:
         last_update = max(map(lambda m: m["update_id"], messages))
         current_offset = last_update + 1
