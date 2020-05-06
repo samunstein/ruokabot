@@ -16,4 +16,4 @@ RELOAD_COMMAND = "reload".lower()
 RERANDOMIZE_COMMAND = "generoi!".lower()
 
 SPREADSHEET_ID = '1WtZZpOU506_iPujD4uJhGOa20jv1daNtYaqKdz47x0A'
-RANGE_NAME = 'Sheet1'
+RANGE_NAME = 'Arki'
