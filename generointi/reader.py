@@ -14,7 +14,7 @@ def read():
     values = result.get('values', [])
 
     data_rows = list(itertools.takewhile(lambda val: val != [], values))
-    food_rows = list(filter(lambda row: row != ['Nimi', 'Tyyppi', 'Proteiini', 'Sesonki', 'Ainekset'], data_rows))
+    food_rows = list(filter(lambda row: row != ['Nimi', 'Tyyppi', 'Proteiini', 'Sesonki', 'Annokset', 'Ainekset'], data_rows))
 
     ruoat = dict(map(lambda r: (r[0], Ruoka(r)), food_rows))
     return ruoat

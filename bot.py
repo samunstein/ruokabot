@@ -72,7 +72,7 @@ def read_foods(offset, extra):
 
 
 def format_food(food):
-    base = "{}:\n{}".format(food.nimi, "".join(["* {}\n".format(i.strip()) for i in food.ainekset.split(",")]))
+    base = "{}: {} annosta.\n{}".format(food.nimi, food.annokset, "".join(["* {}\n".format(i.strip()) for i in food.ainekset.split(",")]))
     return base + "\n{}".format(food.linkki) if food.linkki is not None else base
 
 
