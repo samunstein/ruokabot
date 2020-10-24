@@ -27,4 +27,4 @@ class Ruoka:
 
     @staticmethod
     def ei_loydy(nimi):
-        return Ruoka([nimi, "", "", "", "En tiedä mikä tämä ruoka on. Onko tiedostoihin jäänyt vanha ruoka jota ei ole enää listalla?"])
+        return Ruoka([nimi, "", "", "", "0", "En tiedä mikä tämä ruoka on. Onko tiedostoihin jäänyt vanha ruoka jota ei ole enää listalla?"])

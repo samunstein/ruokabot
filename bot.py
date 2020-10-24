@@ -67,7 +67,8 @@ def read_foods(offset, extra):
                 names = names[:-EXTRA_PER_WEEK]
             ruoat = list(map(lambda name: foodmap[name] if name in foodmap else Ruoka.ei_loydy(name), names))
             return ruoat
-    except:
+    except Exeption as e:
+        print(e.message)
         return []
 
 
